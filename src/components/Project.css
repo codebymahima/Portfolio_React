@@ -1,0 +1,17 @@
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 300px;
+    background-color: rgb(32, 32, 35);
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    margin: 1.1rem;
+    border-radius: 8px;
+    gap: 10%;
+}
+
+.projectname{
+    font-size: 25px;
+}
