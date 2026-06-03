@@ -6,7 +6,9 @@ const Project = (props) => {
     <div>
         <div className="projectCard">
             <h3 className='projectname'>{props.name}</h3>
-            <p>{props.desc}</p>
+            <p className='projDesc'>{props.desc}</p>
+            <button> <a href={props.link}></a>
+                See this project</button>
         </div>
     </div>
   )

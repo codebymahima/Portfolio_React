@@ -1,0 +1,37 @@
+.contactForm{
+    background-color: rgb(32, 32, 35);
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+}
+
+label{
+    font-size: 13px;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    background-color: rgb(33, 33, 36);
+}
+
+textarea{
+    background-color: rgb(33, 33, 36);
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    color: whitesmoke;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

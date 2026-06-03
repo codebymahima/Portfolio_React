@@ -33,6 +33,7 @@ function App() {
       <div className="projectSection">
         <Project name="Quiz Generator" desc="an MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
         <Project name="Personal Portfolio" desc="Designed and developed personal portfolio using React" />
+        <Project name="Dummy " desc="Will add you later" />
       </div>
       <Contact />
     </div>
