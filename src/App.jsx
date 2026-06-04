@@ -11,13 +11,15 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 
 function App() {
+
+
   return (
     <div>
       <NavBar />
       <Hero />
       <About />
       <div className="skillsbox">
-        <h3>My Skills</h3>
+        <h3 id='skills'>My Skills</h3>
         <div className='skillCards'>
           <Skills skill="HTML" image="https://img.icons8.com/?size=96&id=v8RpPQUwv0N8&format=png" />
           <Skills skill="CSS" image="https://img.icons8.com/?size=160&id=YjeKwnSQIBUq&format=png" />
@@ -29,7 +31,7 @@ function App() {
           <Skills skill="C" image="https://img.icons8.com/?size=100&id=25423&format=png" />
         </div>
       </div>
-        <h3>My Projects</h3>
+        <h3 id='projects'>My Projects</h3>
       <div className="projectSection">
         <Project name="Quiz Generator" desc="an MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
         <Project name="Personal Portfolio" desc="Designed and developed personal portfolio using React" />

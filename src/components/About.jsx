@@ -3,7 +3,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className='aboutcont'>
+        <div className='aboutcont' id='about'>
             <div className="aboutleft">
 
             <h3 className='abouthead'>About Me</h3>
