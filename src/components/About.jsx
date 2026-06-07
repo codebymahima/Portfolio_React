@@ -20,12 +20,18 @@ const About = () => {
             </ul>
             </div>
             <div className="aboutright">
+                <div className="statcard">
                 <h3>5+</h3>
                 <p>Projects</p>
+                </div>
+                <div className="statcard">
                 <h3>300+</h3>
                 <p>DSA Questions</p>
+                </div>
+                <div className="statcard">
                 <h3>4+</h3>
                 <p>Technologies</p>
+                </div>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-.aboutcont{
+.aboutcont {
     padding: 1.2rem;
     margin: 1.2rem;
     display: flex;
@@ -7,34 +7,141 @@
     justify-content: space-between;
 }
 
-.aboutleft{
-    max-width: 65dvw;
+.aboutleft {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
 }
 
-.abouthead{
+.abouthead {
     font-size: 40px;
     margin: 10px;
 
 }
 
-.aboutdesc{
+.aboutdesc {
     padding: 10px;
 }
 
-.aboutcont ul{
+.aboutcont h4 {
+    padding: 10px;
+}
+
+.aboutcont ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 10px;
 }
 
-.aboutright{
+.aboutright {
     background-color: rgb(32, 32, 35);
     border-radius: 8px;
-    max-width: 25dvw;
-    min-width: 300px;
+    flex: 0.7;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
+    max-height: 300px;
     justify-content: center;
-    align-items: center;
+
+    gap: 1.2rem;
+
+    margin: 1rem;
+    padding: 1rem;
+}
+.statcard{
+    /* max-width: 300px; */
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap:1rem;
+    width: 100%;
+}
+
+.statcard h3{
+    width: 110px;
+    margin: 0;
+    
+    text-align: right;
+}
+
+.statcard p{
+    margin: 0;
+    
+}
+
+
+
+@media (max-width: 760px) {
+    .aboutcont {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .aboutdesc {
+        font-size: 15px;
+    }
+
+    .statcard{
+        flex-direction: column;
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+     .statcard h3{
+        font-size: 35px;
+        width: auto;   /* agar desktop me fixed width di hai */
+        margin: 0;
+    }
+
+    .statcard p{
+        margin: 0;
+        font-size: 15px
+    }
+
+
+}
+
+@media (max-width: 570px) {
+    .aboutcont {
+        padding: 0.8rem;
+        margin: 0.3rem;
+        flex-direction: column;
+    }
+    .aboutright{
+        width: 80%;
+        max-width: 300px;
+        margin: 1rem auto 0;
+
+        align-items: center;
+    }
+
+    .aboutleft ul{
+        font-size: 15px;
+    }
+
+
+    .abouthead {
+        text-align: center;
+    }
+
+    .statcard{
+        flex-direction: column;
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+     .statcard h3{
+        font-size: 28px;
+        width: auto;   /* agar desktop me fixed width di hai */
+        margin: 0;
+    }
+
+    .statcard p{
+        margin: 0;
+        font-size: 15px
+    }
+
+
 }
