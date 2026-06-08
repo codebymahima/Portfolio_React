@@ -7,6 +7,7 @@
     /* min-height: 70dvh; */
     background-color: rgb(32, 32, 35);
     border-radius: 10px;
+    position: relative;
 }
 
 .hero img {
@@ -118,6 +119,32 @@ span {
 
 }
 
+
+@keyframes pulse{
+    0%,100%{
+        opacity:0.4;
+        transform:scale(1);
+    }
+    
+    50%{
+        opacity:0.8;
+        transform:scale(1.1);
+    }
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  /* top: -100px;
+  right: -100px; */
+  border-radius:50%;
+  filter: blur(90px);
+  background: #943de5;
+
+  animation: pulse 4s ease-in-out infinite;
+}
 @media (max-width: 760px){
 
     .intro {
@@ -140,7 +167,7 @@ span {
 
 @media (max-width: 544px) {
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: fit-content;
         justify-content: center;
         align-items: center;
@@ -156,11 +183,11 @@ span {
     }
 
     .occupation {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     span {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .Left-Hero {
@@ -175,9 +202,19 @@ span {
         gap: 5px;
         
     }
+
+    .hero button{
+        width: 90%;
+    }
+
 }
 
     @media (max-width: 350px) {
+
+        .hero{
+            padding: 0.8rem 0;
+            flex-direction: column-reverse;
+        }
         .Left-Hero{
             width: 100%;
             max-width: none;
@@ -186,7 +223,7 @@ span {
             gap: 5px;
         }
         .description {
-            font-size: 15px;
+            font-size: 13px;
         }
 
         .intro {
@@ -194,20 +231,42 @@ span {
         }
 
         .occupation {
-            font-size: 20px;
+            font-size: 13px;
         }
 
         span {
-            font-size: 27px;
+            font-size: 17px;
         }
 
         .hero img {
-            min-width: 240px;
+            min-width: 220px;
         }
 
         .ImageSection {
             margin: 0.5rem;
             padding: 0.5rem;
         }
+
+        .hero button{
+            width: 90%;
+            margin: 10px;
+        }
+
+        #hire{
+            width: 70%;
+        }
     }
+
+    @keyframes float {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+}
+
+.hero img {
+  animation: float 3s ease-in-out infinite;
+}
 

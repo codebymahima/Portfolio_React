@@ -5,11 +5,17 @@
     /* gap: 10%; */
     margin: 10px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .skillsbox{
     margin: 1.2rem;
+}
+
+#skills{
+    text-align: center;
 }
 
 h3{
@@ -23,4 +29,21 @@ h3{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
+@media (max-width: 610px){
+    .skillsbox{
+        margin: 0.8rem;
+    }
+
+    .skillCards{
+        margin: 0;
+
+    }
+
+    #skills{
+        font-size: 35px;
+    }
+}
+
 

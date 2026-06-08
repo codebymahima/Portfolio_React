@@ -1,6 +1,7 @@
 .card{
     width: 150px;
-    height: 150px;
+
+    max-height: 150px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -9,8 +10,60 @@
     margin: 10px;
     background-color: rgb(32, 32, 35);
     border-radius: 8px;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img{
+.card:hover{
+    transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.skill-icon{
     width: 70%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-name{
+    margin: 10px;
+}
+
+/* .card img:hover{
+    transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+} */
+
+.card:hover .skill-icon{
+    transform: scale(1.1);
+  filter: drop-shadow(0 0 12px currentColor);
+}
+
+
+
+@media (max-width: 610px){
+    .card{
+        width: 120px;
+        
+    }
+
+    .skill-icon{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 350px){
+    .card{
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .skill-icon{
+        width: 50%;
+    }
+
+    .skill-name{
+        margin: 5px;
+    }
 }
