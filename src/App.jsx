@@ -15,6 +15,8 @@ function App() {
 
   return (
     <div>
+      {/* <div className="blob blob1"></div>
+      <div className="blob blob2"></div> */}
       <NavBar />
       <Hero />
       <About />
@@ -31,11 +33,11 @@ function App() {
           <Skills skill="C" image="https://img.icons8.com/?size=100&id=25423&format=png" />
         </div>
       </div>
-        <h3 id='projects'>My Projects</h3>
+      <h3 id='projects'>My Projects</h3>
       <div className="projectSection">
-        <Project name="Quiz Generator" desc="an MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
-        <Project name="Personal Portfolio" desc="Designed and developed personal portfolio using React" />
-        <Project name="Dummy " desc="Will add you later" />
+        <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Designed and developed personal portfolio using React" />
+        <Project name="Quiz Generator" stack="HTML5, CSS3, Javascript" link="https://random-gk-quiz.vercel.app/" desc="an MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
+        <Project name="Personal Portfolio" stack="React.js, CSS3" desc="Designed and developed personal portfolio using React" />
       </div>
       <Contact />
     </div>

@@ -13,8 +13,6 @@ const Contact = () => {
         <label htmlFor="message">Your Message</label>
         <textarea name="message" id="message" rows={20} cols={55} placeholder='Hi, nice getting in touch with you!'></textarea>
         </div>
-        <a href="https://www.linkedin.com/in/mahima-lalwani/">LinkedIn</a>
-        <a href=" github.com/codebymahima">GitHub</a>
     </div>
   )
 }

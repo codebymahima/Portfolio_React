@@ -8,8 +8,13 @@ nav{
     max-width: 100dvw;
     min-height: 40px;
     display: flex;
-    background-color: rgb(71, 4, 134);
+    background: linear-gradient(
+  90deg,
+  #5b21b6,
+  #6d28d9
+);
     position: sticky;
+    box-shadow: 0 2px 20px rgba(168,85,247,0.25);
     padding: 0 2rem;
     
 }
@@ -32,7 +37,7 @@ ul>li{
 }
 
 .menuButton{
-    background-color: rgb(71, 4, 134);
+   background: transparent;
     width: 30px;
     color: white;
     /* margin-right: 20px; */
