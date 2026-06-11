@@ -1,37 +1,145 @@
-.contactForm{
-    background-color: rgb(32, 32, 35);
-    border-radius: 8px;
-    width: 500px;
+.contactSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 30px;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1.2rem;
 }
 
-label{
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(1rem, 4vw, 3rem);
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+.contact {
+    flex: 1.3;
+    min-width: 0;
+}
+
+.contactForm {
+    flex: 1.2 1 0;
+    background-color: rgb(32, 32, 35);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 560px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: clamp(1rem, 2.5vw, 1.8rem);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contactForm label {
     font-size: 13px;
 }
 
-input{
-    width: 90%;
-    height: 40px;
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
     border: 1px solid whitesmoke;
     border-radius: 6px;
     background-color: rgb(33, 33, 36);
-}
-
-textarea{
-    background-color: rgb(33, 33, 36);
-    border: 1px solid whitesmoke;
-    border-radius: 6px;
     color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contactForm input {
+    height: 42px;
+}
+
+.contactForm textarea {
+   height: clamp(160px, 22vw, 280px);
+    resize: vertical;
+}
+
+.mapContainer {
+    flex: 0.75 1 0;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+}
+
+.mapContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 700px) {
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .contactForm,
+    .mapContainer {
+        width: min(100%, 450px);
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .mapContainer {
+        aspect-ratio: 1 / 1;
+    }
+
+    .contactForm textarea {
+        height: 180px;
+    }
+}
+
+@media (max-width: 610px){
+    #contactHead{
+        font-size: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .contactSection {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .contactForm {
+        padding: 1rem;
+    }
+
+    .mapContainer {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactSection {
+        padding: 1.5rem 0.9rem;
+    }
+
+    .contactForm,
+    .mapContainer {
+        width: 100%;
+    }
+
+    .contactForm {
+        padding: 1.1rem;
+    }
+
+    .contactForm textarea {
+        height: 170px;
+    }
+
+    #contactHead {
+        font-size: 36px;
+        text-align: center;
+    }
 }
