@@ -6,7 +6,7 @@ const About = () => {
         <div className='aboutcont' id='about'>
             <div className="aboutleft">
 
-            <h3 className='abouthead'>About Me</h3>
+            <h3 className='abouthead' id='about'>About Me</h3>
             <p className='aboutdesc'>I’m Mahima, a Computer Science student passionate about building web applications and solving problems through code. Currently, I’m focused on learning Data Structures & Algorithms, React, and modern web development while working on real-world projects to strengthen my skills.
 
                 I enjoy turning ideas into interactive user experiences and continuously improving my development skills through hands-on learning. My goal is to grow as a software developer and contribute to impactful products that solve real problems. </p>

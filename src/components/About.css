@@ -12,6 +12,9 @@
     flex-direction: column;
     flex: 2;
 }
+#about{
+      scroll-margin-top: 90px;
+}
 
 .abouthead {
     font-size: 40px;

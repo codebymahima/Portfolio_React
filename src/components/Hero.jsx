@@ -5,13 +5,15 @@ import Profile from '../assets/Profile.jpeg'
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='home'>
             <div className='Left-Hero'>
                 <p className='intro'>Hi, I am Mahima</p>
                 <h1 className='occupation'> I am a <span>FRONTEND DEVELOPER</span> </h1>
                 <p className="description">Building responsive and interactive web experiences with React and modern JavaScript.</p>
                 <div className="buttons">
-                    <button>Download Resume</button>
+                    <a href="/Mahima_Lalwani_Resume.pdf" download>
+  <button>Download Resume</button>
+</a>
                     <a href="#contact">
                         <button id='hire'>Hire Me</button>
                     </a>

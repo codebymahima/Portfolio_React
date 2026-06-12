@@ -35,9 +35,9 @@ function App() {
       </div>
       <h3 id='projects'>My Projects</h3>
       <div className="projectSection">
-        <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Designed and developed personal portfolio using React" />
-        <Project name="Quiz Generator" stack="HTML5, CSS3, Javascript" link="https://random-gk-quiz.vercel.app/" desc="an MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
-        <Project name="Personal Portfolio" stack="React.js, CSS3" desc="Designed and developed personal portfolio using React" />
+        <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Track expenses, manage budgets, generate invoices, and gain financial insights through an intuitive finance dashboard." />
+        <Project name="Quiz Generator" stack="HTML5, CSS3, Javascript" link="https://random-gk-quiz.vercel.app/" desc="An MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
+        <Project name="Personal Portfolio" stack="React.js, CSS3" desc="Personal portfolio website built with React to showcase projects, skills, and achievements with a fully responsive and modern design." link="https://github.com/codebymahima/Portfolio_React"/>
       </div>
       <Contact />
     </div>
