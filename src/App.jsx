@@ -15,8 +15,6 @@ function App() {
 
   return (
     <div>
-      {/* <div className="blob blob1"></div>
-      <div className="blob blob2"></div> */}
       <NavBar />
       <Hero />
       <About />
@@ -31,12 +29,16 @@ function App() {
           <Skills skill="Redux" image="https://img.icons8.com/?size=96&id=jD-fJzVguBmw&format=png" />
           <Skills skill="Java" image="https://img.icons8.com/?size=160&id=lTKW3iI3wIT0&format=png" />
           <Skills skill="C" image="https://img.icons8.com/?size=100&id=25423&format=png" />
+          <Skills skill="MySQL" image="https://img.icons8.com/?size=96&id=qGUfLiYi1bRN&format=png" />
+          <Skills skill="Node.js" image="https://img.icons8.com/?size=96&id=hsPbhkOH4FMe&format=png" />
+          <Skills skill="Git" image="https://img.icons8.com/?size=128&id=xBKl2pdJg5kk&format=png" />
+          <Skills skill="GitHub" image="https://img.icons8.com/?size=160&id=efFfwotdkiU5&format=png" />
         </div>
       </div>
       <h3 id='projects'>My Projects</h3>
       <div className="projectSection">
-        <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Track expenses, manage budgets, generate invoices, and gain financial insights through an intuitive finance dashboard." />
-        <Project name="Quiz Generator" stack="HTML5, CSS3, Javascript" link="https://random-gk-quiz.vercel.app/" desc="An MCQ quiz application using HTML, CSS, and JavaScript with dynamic rendering and score calculation." />
+        <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Built a React, Tailwind CSS, and Supabase-based finance dashboard for freelancers with authentication, invoice creation, PDF download, invoice history, payment status tracking, and AI-assisted finance guidance." />
+        <Project name="ScopeWise – Project Scope Analysis & Proposal Generator" stack="React.js, Tailwind CSS" link="https://scope-wise-project-scope-analysis-p.vercel.app/" desc="Built a React and Tailwind CSS web app that analyzes client project inputs to generate proposal score, risk level, complexity, pricing guidance, timelines, negotiation points, email draft, and SOW draft." />
         <Project name="Personal Portfolio" stack="React.js, CSS3" desc="Personal portfolio website built with React to showcase projects, skills, and achievements with a fully responsive and modern design." link="https://github.com/codebymahima/Portfolio_React"/>
       </div>
       <Contact />
