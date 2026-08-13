@@ -39,7 +39,7 @@ function App() {
       <div className="projectSection">
         <Project name="AI Freelancer Finance Assistant" link="https://ai-freelancer-finance-assistant.vercel.app/" stack="React.js, Tailwind CSS, Gemini API, SupaBase" desc="Built a React, Tailwind CSS, and Supabase-based finance dashboard for freelancers with authentication, invoice creation, PDF download, invoice history, payment status tracking, and AI-assisted finance guidance." />
         <Project name="ScopeWise – Project Scope Analysis & Proposal Generator" stack="React.js, Tailwind CSS" link="https://scope-wise-project-scope-analysis-p.vercel.app/" desc="Built a React and Tailwind CSS web app that analyzes client project inputs to generate proposal score, risk level, complexity, pricing guidance, timelines, negotiation points, email draft, and SOW draft." />
-        <Project name="Personal Portfolio" stack="React.js, CSS3" desc="Personal portfolio website built with React to showcase projects, skills, and achievements with a fully responsive and modern design." link="https://github.com/codebymahima/Portfolio_React"/>
+        <Project name="Freelancer Finance Database" stack="MySQL, SQL" desc="Designed a relational finance database using MySQL to manage clients, invoices, and financial records. Implemented SQL queries using joins, subqueries, aggregation, filtering, sorting, and views for efficient data analysis." link="https://github.com/codebymahima/Freelancer-Finance-Database"/>
       </div>
       <Contact />
     </div>
